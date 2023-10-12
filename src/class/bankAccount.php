@@ -17,7 +17,7 @@ class BankAccount extends People {
     }
 
     public function toString(){
-        return $this->name . "vous avez ". $this->pay . " sur votre compte en banque €.";
+        return "Mr/Mme ".$this->name . " vous avez ". $this->pay . " € sur votre compte en banque.";
     }
 
 }
