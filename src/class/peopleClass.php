@@ -1,6 +1,6 @@
 <?php
 class People {
-    protected $name;
+    protected $name = "Dupont";
     protected $phone;
     protected $email;
 
