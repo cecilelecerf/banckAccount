@@ -5,7 +5,21 @@ require_once("./class/peopleClass.php")
 class BankAccount extends People {
     private $pay;
 
-    
+    public function __constructor(int $pay, string $name, int $phone, string $email){
+        parent::__constructor($name,$phone, $email);
+        $this->pay = $pay;
+    };
+
+    public function deposit($sum){
+        $this->pay += $sum;
+    }
+    public function withdrawal($sum){
+        $this->pay -= $sum;
+    }
+
+    public function toString(){
+        return $this->name . "vous avez ". $this->pay . " sur votre compte en banque €."
+    }
 
 }
 
