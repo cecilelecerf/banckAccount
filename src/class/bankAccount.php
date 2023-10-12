@@ -2,9 +2,9 @@
 require_once("./class/peopleClass.php");
 
 class BankAccount extends People {
-    private $pay = 1000;
+    private $pay;
 
-    public function __construct(int $pay, string $name, string $phone, string $email){
+    public function __construct(int $pay = 1000, string $name, string $phone, string $email){
         parent::__construct($name, $phone, $email);
         $this->pay = $pay;
     }
