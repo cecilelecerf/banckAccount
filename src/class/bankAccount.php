@@ -1,6 +1,5 @@
 <?php
-require_once("./class/peopleClass.php")
-
+require_once("./class/peopleClass.php");
 
 class BankAccount extends People {
     private $pay = 1000;
@@ -8,7 +7,7 @@ class BankAccount extends People {
     public function __constructor(int $pay, string $name, int $phone, string $email){
         parent::__constructor($name,$phone, $email);
         $this->pay = $pay;
-    };
+    }
 
     public function deposit($sum){
         $this->pay += $sum;
@@ -18,7 +17,7 @@ class BankAccount extends People {
     }
 
     public function toString(){
-        return $this->name . "vous avez ". $this->pay . " sur votre compte en banque €."
+        return $this->name . "vous avez ". $this->pay . " sur votre compte en banque €.";
     }
 
 }
